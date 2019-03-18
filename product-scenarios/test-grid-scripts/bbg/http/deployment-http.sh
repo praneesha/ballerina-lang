@@ -19,8 +19,8 @@ readonly deployment_http_parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pw
 readonly deployment_http_grand_parent_path=$(dirname ${deployment_http_parent_path})
 readonly deployment_http_great_grand_parent_path=$(dirname ${deployment_http_grand_parent_path})
 
-. ${deployment_http_grand_parent_path}/util/usage.sh
-. ${deployment_http_grand_parent_path}/util/setup-deployment-env.sh ${INPUT_DIR} ${OUTPUT_DIR}
+. ${deployment_http_great_grand_parent_path}/util/usage.sh
+. ${deployment_http_great_grand_parent_path}/util/setup-deployment-env.sh ${INPUT_DIR} ${OUTPUT_DIR}
 
 function setup_deployment() {
     clone_bbg_and_set_bal_path
