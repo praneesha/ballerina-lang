@@ -29,7 +29,7 @@ dependencies {
 //    implementation project(':lib-creator')
 
     testCompile project(':ballerina-launcher')
-    testCompile project(':ballerina-builtin')
+    testCompile project(':ballerina-lang:annotations')
     testCompile project(':ballerina-runtime-api')
     testCompile project(':ballerina-system')
     testCompile project(':ballerina-utils')
@@ -37,7 +37,7 @@ dependencies {
     testCompile 'org.testng:testng'
 
     baloImplementation project(path: ':ballerina-system', configuration: 'baloImplementation')
-    baloImplementation project(path: ':ballerina-builtin', configuration: 'baloImplementation')
+    baloImplementation project(path: ':ballerina-lang:annotations', configuration: 'baloImplementation')
     baloImplementation project(path: ':ballerina-utils', configuration: 'baloImplementation')
     baloImplementation project(path: ':ballerina-runtime-api', configuration: 'baloImplementation')
 

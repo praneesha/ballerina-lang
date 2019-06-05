@@ -24,9 +24,9 @@ dependencies {
     implementation project(':ballerina-runtime')
 //    implementation project(':ballerina-lang')
 //    implementation project(':lib-creator')
-    implementation project(':ballerina-builtin')
+    implementation project(':ballerina-lang:annotations')
     implementation project(":ballerina-launcher")
-    baloImplementation project(path: ':ballerina-builtin', configuration: 'baloImplementation')
+    baloImplementation project(path: ':ballerina-lang:annotations', configuration: 'baloImplementation')
     baloImplementation project(path: ':ballerina-runtime-api', configuration: 'baloImplementation')
     implementation project(':ballerina-runtime-api')
 

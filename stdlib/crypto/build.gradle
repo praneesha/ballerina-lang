@@ -19,7 +19,7 @@ apply from: "$rootDir/gradle/balNativeLibProject.gradle"
 
 dependencies {
     baloImplementation project(path: ':ballerina-time', configuration: 'baloImplementation')
-    baloImplementation project(path: ':ballerina-builtin', configuration: 'baloImplementation')
+    baloImplementation project(path: ':ballerina-lang:annotations', configuration: 'baloImplementation')
     baloImplementation project(path: ':ballerina-runtime-api', configuration: 'baloImplementation')
 
     implementation 'org.ballerinalang:ballerina-lang:0.992.0-m1'
@@ -34,7 +34,7 @@ dependencies {
     testCompile 'org.testng:testng'
     testCompile 'org.slf4j:slf4j-jdk14'
     testCompile project(':ballerina-launcher')
-    testCompile project(':ballerina-builtin')
+    testCompile project(':ballerina-lang:annotations')
     testCompile project(':ballerina-runtime-api')
 }
 

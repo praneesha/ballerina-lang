@@ -19,7 +19,7 @@ apply from: "$rootDir/gradle/balNativeLibProject.gradle"
 
 dependencies {
     baloImplementation project(path: ":ballerina-internal", configuration: 'baloImplementation')
-    baloImplementation project(path: ":ballerina-builtin", configuration: 'baloImplementation')
+    baloImplementation project(path: ":ballerina-lang:annotations", configuration: 'baloImplementation')
     baloImplementation project(path: ":ballerina-config-api", configuration: 'baloImplementation')
     baloImplementation project(path: ":ballerina-crypto", configuration: 'baloImplementation')
     baloImplementation project(path: ":ballerina-cache", configuration: 'baloImplementation')
@@ -40,7 +40,7 @@ dependencies {
     implementation project(':ballerina-launcher')
     implementation project(':ballerina-config')
     implementation project(':ballerina-internal')
-    implementation project(":ballerina-builtin")
+    implementation project(":ballerina-lang:annotations")
     implementation project(":ballerina-config-api")
     implementation project(":ballerina-crypto")
     implementation project(":ballerina-cache")
